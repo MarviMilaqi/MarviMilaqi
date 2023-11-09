@@ -2,7 +2,7 @@
 - 👀 I’m interested in programming, cybersecurity, gym
 - 🌱 I’m currently learning programming, SQL and more
 - 💞️ I’m looking to collaborate on programming projects, SQL projects, Cybersecurity
-- 📫 How to reach me @marvi_milaqi on instagram
+- 📫 How to reach me marvimilaqi23@gmail.com; @marvi_milaqi on Instagram
 
 <!---
 MarviMilaqi/MarviMilaqi is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
