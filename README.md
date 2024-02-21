@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @MarviMilaqi
-- 👀 I’m interested in programming, cybersecurity, gym
-- 🌱 I’m currently learning programming, SQL and more
-- 💞️ I’m looking to collaborate on programming projects, SQL projects, Cybersecurity
+- 👀 I’m interested in programming, web-development, gym
+- 🌱 I’m currently learning programming, SQL, Front-End and more
+- 💞️ I’m looking to collaborate on programming, SQL or Web-Development projects
 - 📫 How to reach me marvimilaqi23@gmail.com; @marvi_milaqi on Instagram
 
 <!---
