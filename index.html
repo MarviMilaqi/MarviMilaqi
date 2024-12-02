@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" style="--headerHeight: calc(100vh - 80.80000305175781px);">
+<head>
+  <meta charset="UTF-8">
+  <title>AstraFly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="header_wrapper">
+  <div class="header_container">
+    <nav class="navigationmenuRoot" data-orientation="horizontal" dir="ltr">
+      <div class="nav_itm" id="astra_fly_logo">
+        <img class="astrafly_logo" src="img/ASTRAFLY-GvbdknZJs-transformed.png" alt="AstraFly Logo">
+      </div>
+      <div class="menu_items">
+        <ul class="items_of_menu" data-orientation="horizontal" dir="ltr">
+          <li class="itemHeader">
+            <button class="itemHeader" id="flights_button" aria-label="Flights">Flights</button>
+          </li>
+          <li class="itemHeader">
+            <button class="itemHeader" id="destinations_button" aria-label="Destinations">Destinations</button>
+          </li>
+          <li class="itemHeader">
+            <button class="itemHeader" id="wow_airbnb_button" aria-label="WoW Airbnb">WoW Airbnb</button>
+          </li>
+          <li class="itemHeader">
+            <button class="itemHeader" id="support_button" aria-label="Support">Support</button>
+          </li>
+          <li class="itemHeader">
+            <button class="itemHeader" id="mybooking_button" aria-label="My booking">My booking</button>
+          </li>
+        </ul>
+      </div>
+      <div class="nav_itemm" id="search_button">
+        <button class="search_btn" aria-label="Search" role="button" data-cy="globalSearchButton">
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 0 488.4 488.4" xml:space="preserve" class="search">
+<g>
+	<g>
+		<path d="M0,203.25c0,112.1,91.2,203.2,203.2,203.2c51.6,0,98.8-19.4,134.7-51.2l129.5,129.5c2.4,2.4,5.5,3.6,8.7,3.6
+			s6.3-1.2,8.7-3.6c4.8-4.8,4.8-12.5,0-17.3l-129.6-129.5c31.8-35.9,51.2-83,51.2-134.7c0-112.1-91.2-203.2-203.2-203.2
+			S0,91.15,0,203.25z M381.9,203.25c0,98.5-80.2,178.7-178.7,178.7s-178.7-80.2-178.7-178.7s80.2-178.7,178.7-178.7
+			S381.9,104.65,381.9,203.25z"/>
+	</g>
+</g>
+</svg>
+
+        </button>
+        <button class="nav_item" id="frequent_flyer">Frequent flyer</button>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+<div class="main_div">
+  <div class="upper_part">
+    <ol role="tablist" class="upper_items">
+      <li role="tab" class="upper_items" id="book_flight_wrapper">
+        <h2>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="red_airplane" data-name="red_airplane" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28.35 28.35">
+            <defs>
+              <style>
+                  .cls-1 {
+                      fill: #d64308;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <g id="Group_274">
+              <path id="Path_98" class="cls-1" d="M18.28,7.31c-.2.17-.39.35-.57.55l-6.58-.54,1.12-1.12-1.15-1.16-2.1,2.1-4.86-.4-1.56,1.58,11.23,3.73c-1.9,2.12-3.93,4.4-5.18,6l-4.79-1.2-.86.96,4.43,2.12c-.12.24-.08.53.11.72.2.19.49.24.74.13l2.16,4.56.89-1-1.16-4.74c1.5-1.1,3.76-3,6.09-5.09l3.64,11.2,1.6-1.47-.36-4.9,2.14-2.14-1.16-1.15-1.15,1.15-.48-6.58c.17-.15.32-.31.47-.46,2.23-2.21,4.85-5.29,4.83-6.66,0-.24-.08-.46-.25-.63-1.41-1.34-6.67,3.89-7.24,4.46"/>
+            </g>
+          </svg>
+          Book Flight
+        </h2>
+      </li>
+
+      <li role="tab" class="upper_items" id="manage_booking_wrapper">
+        <h2>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="manage_booking" data-name="manage_booking" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28.35 28.35">
+            <defs>
+              <style>
+                  .cls-2 {
+                      fill: #1a2f61;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <rect id="Rectangle_83"  class="cls-2" x="2.61" y="10.15" width="21.31" height="2.45"/>
+            <rect id="Rectangle_83-2" class="cls-2" x="2.61" y="4.54" width="21.31" height="2.45"/>
+            <rect id="Rectangle_84"  class="cls-2" x="2.61" y="15.75" width="12.13" height="2.45"/>
+            <rect id="Rectangle_85"  class="cls-2" x="2.61" y="21.36" width="12.13" height="2.45"/>
+            <path id="Path_99" class="cls-2" d="M20.57,22.58l.89-2.74,2.48,2.48,1.53-1.53-2.48-2.48,2.74-.89-8.48-3.32,3.32,8.48Z"/>
+          </svg>
+          Manage Booking
+        </h2>
+      </li>
+
+      <li role="tab" class="upper_items" id="add_extras_wrapper">
+        <h2>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="add_extras" data-name="add_extras" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28.35 28.35">
+            <defs>
+              <style>
+                  .cls-3 {
+                      fill: #1a2f61;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <path class="cls-3" d="M20.92,8.22h-1.4V3.07h-4.16v5.15h-1.4c-1.25,0-2.26,1.01-2.26,2.26v11.33c0,1.25,1.01,2.26,2.26,2.26h.09v1.22h1.51v-1.22h3.78v1.22h1.51v-1.22h.09c1.25,0,2.26-1.01,2.26-2.26v-11.33c0-1.25-1.01-2.26-2.26-2.26ZM16.06,4.4h2.75v3.82h-2.75v-3.82ZM16.01,21.42h-.95v-10.57h.95v10.57ZM18.86,10.85h.95v10.57s-.95,0-.95,0v-10.57Z"/>
+            <path class="cls-3" d="M11.01,21.81h0v-9.26h-1.77v-3.1h1.96c.2-.53.54-.99.99-1.33h-3.66v4.43h-1.1c-1.25,0-2.26,1.01-2.26,2.26v7c0,1.25,1.01,2.26,2.26,2.26h.09v1.21h1.51v-1.21h3.06c-.68-.55-1.07-1.38-1.08-2.26ZM9.48,21.43h-.95v-6.24h.95v6.24Z"/>
+          </svg>
+          Add Extras
+        </h2>
+      </li>
+
+      <li role="tab" class="upper_items" id="online_checkin_wrapper">
+        <h2>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="checkin_blue" data-name="checkin_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 28.35 28.35">
+            <defs>
+              <style>
+                  .cls-4 {
+                      fill: #1a2f61;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <g id="Group_918">
+              <path id="Path_394" class="cls-4" d="M8.5,14.84l2.35,2.53c.37.39.93.53,1.44.33l10.2-3.92c2.95-1.21.45-2.96-1.72-2.13l-3.2,1.23-4.66-2.35-1.39.49,2.93,3.07-2.95,1.13-1.8-.97-1.19.58Z"/>
+              <path id="Path_395" class="cls-4" d="M16.2,2.5H6.73c-1.23,0-2.22,1-2.22,2.22v18.9c0,1.23.99,2.22,2.22,2.22h9.47c1.23,0,2.22-.99,2.22-2.22h0v-7.33l-1.54.59v5.93H6.05V4.36h10.84v7.17l.64.32.9-.35v-6.78c0-1.23-.99-2.22-2.22-2.22M11.47,23.38c.53,0,.96.43.96.96s-.43.96-.96.96-.96-.43-.96-.96h0c0-.53.43-.96.96-.96M12.58,3.78h-2.22c-.18,0-.32-.14-.32-.32,0-.18.14-.32.32-.32h2.22c.18,0,.32.14.32.32,0,.18-.14.32-.32.32"/>
+            </g>
+          </svg>
+          Online Check-in
+        </h2>
+      </li>
+    </ol>
+  </div>
+
+
+  <div class="lower_part">
+    <div class="flight_search_wrapper">
+      <div class="flight_search_container">
+    <div class="trip-type-wrapper">
+      <div class="trip_type" id="trip_round">
+        <span class="trip_type_text" id="round_trip">Round trip</span>
+      </div>
+      <div class="trip_type" id="trip_oneway">
+        <span class="trip_type_text" id="one_way">One way</span>
+      </div>
+    </div>
+      </div>
+
+      <div class="flight_search_container2">
+        <div class="flight_search_dropdown">
+          <div class="flight_search_dropdown_inner">
+    <div class="passenger_breakdown">
+      <div class="passenger_adult">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="adult_blue" data-name="adult_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+          <defs>
+            <style>
+                .cls-5 {
+                    fill: #1a2f61;
+                    stroke-width: 0;
+                }
+            </style>
+          </defs>
+          <path class="cls-5" d="M21.37,12.15c2.94,0,5.33-2.39,5.33-5.33s-2.39-5.34-5.33-5.34-5.34,2.39-5.34,5.34,2.39,5.33,5.34,5.33ZM21.37,3.09c2.06,0,3.73,1.67,3.73,3.73s-1.67,3.73-3.73,3.73-3.73-1.67-3.73-3.73,1.67-3.73,3.73-3.73Z"/>
+          <path class="cls-5" d="M21.56,13.22c-8.6,0-12.45,2.6-12.45,5.17v16.83c0,2.87,2.84,2.87,4.21,2.87h.37v1.87c0,.44.36.8.8.8s.8-.36.8-.8v-7.09h11.67v7.09c0,.59.48,1.07,1.07,1.07s1.07-.48,1.07-1.07v-1.87h.1c1.37,0,4.21,0,4.21-2.87v-16.83c0-2.5-3.11-5.17-11.85-5.17ZM31.8,35.23c0,.86-.26,1.26-2.6,1.26h-.1v-15.24c0-.59-.48-1.07-1.07-1.07s-1.07.48-1.07,1.07v10.03h-11.67v-10.03c0-.44-.36-.8-.8-.8s-.8.36-.8.8v15.24h-.37c-2.34,0-2.6-.4-2.6-1.26v-16.83c0-.92,1.97-3.52,10.67-3.56l-2.13,10.33,2.47,3.89,2.47-3.89-2.13-10.32c7.65.1,9.73,2.26,9.73,3.56v16.83Z"/>
+        </svg>
+        <input id="adultNo" name="adultNo" readonly="readonly" value="1">
+      </div>
+
+      <div class="passenger_child">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="child_blue" data-name="child_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+          <defs>
+            <style>
+                .cls-6 {
+                    fill: #1a2f61;
+                    stroke-width: 0;
+                }
+            </style>
+          </defs>
+          <path class="cls-6" d="M21.26,19.49c3.25,0,5.9-2.65,5.9-5.9,0-.8-.16-1.56-.45-2.26l2.54-.58c.43-.1.7-.53.61-.96-.1-.43-.53-.71-.96-.61l-3.05.69c-1.08-1.34-2.73-2.19-4.58-2.19-3.25,0-5.9,2.65-5.9,5.9s2.65,5.9,5.9,5.9ZM21.26,9.3c1.04,0,1.98.39,2.73,1.01l-6.62,1.51c.68-1.48,2.16-2.51,3.9-2.51ZM16.97,13.56l8.12-1.85c.28.57.46,1.21.46,1.89,0,2.37-1.93,4.29-4.29,4.29s-4.29-1.93-4.29-4.29c0-.01,0-.03,0-.04Z"/>
+          <path class="cls-6" d="M20.97,20.96c-6.57,0-8.32,3.56-8.32,5.66v7.4c0,.44.36.8.8.8s.8-.36.8-.8v-7.4c0-1.5,1.41-4.05,6.71-4.05s7.3,2.39,7.3,3.89v7.56c0,.44.36.8.8.8s.8-.36.8-.8v-7.56c0-2.21-2.37-5.5-8.91-5.5Z"/>
+        </svg>
+        <input id="childNo" name="childNo" readonly="readonly" value="0">
+      </div>
+
+      <div class="passenger_infant">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="infant_blue" data-name="infant_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+          <defs>
+            <style>
+                .cls-7 {
+                    fill: #172e59;
+                    stroke-width: 0;
+                }
+            </style>
+          </defs>
+          <path class="cls-7" d="M21.12,14.73c2.71,0,4.91-2.2,4.91-4.91s-2.2-4.91-4.91-4.91-4.91,2.2-4.91,4.91,2.2,4.91,4.91,4.91ZM21.12,6.52c1.82,0,3.3,1.48,3.3,3.3s-1.48,3.3-3.3,3.3-3.3-1.48-3.3-3.3,1.48-3.3,3.3-3.3Z"/>
+          <path class="cls-7" d="M34.36,20.6c-.22-.73-.73-1.33-1.42-1.69-.27-.14-6.68-3.39-11.67-3.39s-11.4,3.25-11.67,3.39c-.7.36-1.2.96-1.42,1.69-.21.71-.13,1.46.24,2.11.73,1.28,2.34,1.77,3.83,1.16.58-.24,1.53-.57,2.53-.92.17-.06.34-.12.51-.18v1.48h1.61v-2.62c0-.26-.13-.51-.34-.66-.21-.15-.49-.19-.73-.1-.5.18-1.04.37-1.57.56-1.03.36-2,.7-2.61.96-.63.26-1.46.18-1.82-.46-.15-.26-.18-.57-.1-.86.09-.31.31-.56.61-.72.26-.13,6.34-3.21,10.94-3.21s10.88,3.18,10.94,3.21c.3.16.52.41.62.72.09.29.05.59-.1.86-.36.64-1.19.71-1.83.46-.95-.38-1.76-.66-2.9-1.06l-1.28-.45c-.25-.09-.52-.05-.73.1-.21.15-.34.4-.34.66v2.62h1.61v-1.49l.21.07c1.12.39,1.91.67,2.84,1.04,1.5.59,3.11.11,3.82-1.16.37-.65.45-1.4.24-2.11Z"/>
+          <path class="cls-7" d="M27.8,29.67c-.21.55-.48,1.06-.81,1.53.94,1.15,2.02,2.61,2.34,3.11.33.52.17,1.2-.34,1.53-.56.36-1.22.07-1.57-.39-.17-.22-.43-.56-.74-.96-.38-.49-.83-1.08-1.28-1.66-.43.32-.9.6-1.4.81.48.64.99,1.29,1.41,1.84.31.39.56.73.73.94.58.77,1.45,1.19,2.31,1.19.49,0,.97-.13,1.4-.41,1.26-.8,1.64-2.48.84-3.75-.39-.62-1.81-2.53-2.88-3.78Z"/>
+          <path class="cls-7" d="M16.29,34.49c-.31.4-.57.74-.74.96-.35.47-1,.75-1.57.39-.52-.33-.67-1.01-.34-1.53.32-.5,1.39-1.96,2.34-3.11-.33-.47-.6-.99-.81-1.53-1.08,1.25-2.49,3.16-2.88,3.78-.8,1.26-.42,2.95.84,3.75.43.28.92.41,1.4.41.86,0,1.73-.42,2.31-1.19.16-.22.42-.55.73-.94.42-.54.92-1.2,1.41-1.84-.5-.21-.97-.49-1.4-.81-.44.58-.9,1.17-1.28,1.66Z"/>
+          <path class="cls-7" d="M27.19,27.2v-1.78h-11.84v1.78c0,3.27,2.66,5.92,5.92,5.92s5.92-2.66,5.92-5.92ZM21.27,31.51c-2.38,0-4.31-1.94-4.31-4.31v-.17h8.63v.17c0,2.38-1.94,4.31-4.31,4.31Z"/>
+        </svg>
+        <input id="infantNo" name="infantNo" readonly="readonly" value="0">
+      </div>
+
+      <div class="drowpdown_arrow">
+        <svg id="dropdown_arrow" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.3536 1.35355C17.5488 1.15829 17.5488 0.841709 17.3536 0.646447C17.1583 0.451184 16.8417 0.451184 16.6464 0.646447L17.3536 1.35355ZM9 9L8.64645 9.35355C8.84171 9.54882 9.15829 9.54882 9.35355 9.35355L9 9ZM1.35355 0.646446C1.15829 0.451184 0.841709 0.451184 0.646446 0.646446C0.451185 0.841708 0.451185 1.15829 0.646446 1.35355L1.35355 0.646446ZM16.6464 0.646447L8.64645 8.64645L9.35355 9.35355L17.3536 1.35355L16.6464 0.646447ZM9.35355 8.64645L1.35355 0.646446L0.646446 1.35355L8.64645 9.35355L9.35355 8.64645Z" fill="#082872"/>
+        </svg>
+
+      </div>
+    </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+
+    <div class="flight_search_container3">
+      <div class="origin-destination_wrapper">
+        <div class="origin_wrapper">
+          <div class="origin_wrapper_inner">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="takeoff" data-name="takeoff" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+              <defs>
+                <style>
+                    .cls-7 {
+                        fill: #1a2f5d;
+                    }
+
+                    .cls-7 {
+                        stroke-width: 0;
+                    }
+
+                    .cls-7 {
+                        fill: #1a2f61;
+                    }
+                </style>
+              </defs>
+              <g>
+                <g id="Path_19">
+                  <path class="cls-7" d="M11.47,27.31c-1.08,0-2.12-.44-2.89-1.27l-6.27-6.75,4.25-2.1,4.21,2.26,5.16-1.98-6.77-7.12,4.9-1.74,10.77,5.44,7.03-2.7c3.29-1.26,7.26-.31,8.16,1.97.33.83.64,2.93-3.51,4.63l-23.62,9.08c-.47.18-.95.27-1.42.27ZM5.3,19.85l4.61,4.97c.6.64,1.52.86,2.34.54l23.6-9.08c1.77-.73,2.75-1.62,2.49-2.28-.39-.97-3.05-2.02-5.83-.95l-7.78,2.99-10.79-5.45-1.54.55,6.72,7.06-8.47,3.26-4.12-2.21-1.23.61Z"/>
+                </g>
+              </g>
+              <g id="Path_374">
+                <path class="cls-7" d="M34.65,33.9H7.87c-.67,0-1.21-.54-1.21-1.21s.54-1.21,1.21-1.21h26.79c.67,0,1.21.54,1.21,1.21s-.54,1.21-1.21,1.21Z"/>
+              </g>
+            </svg>
+          <input class="autocomplete" type="text" placeholder="Select a City / Region" id="from">
+            </div>
+        </div>
+
+        <div class="destination_wrapper">
+          <div class="destination_wrapper_inner">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="landing" data-name="landing" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+              <defs>
+                <style>
+                    .cls-8 {
+                        fill: #1a2f61;
+                        stroke-width: 0;
+                    }
+                </style>
+              </defs>
+              <g id="Path_374">
+                <path class="cls-8" d="M34.65,33.82H7.87c-.67,0-1.21-.54-1.21-1.21s.54-1.21,1.21-1.21h26.79c.67,0,1.21.54,1.21,1.21s-.54,1.21-1.21,1.21h0Z"/>
+              </g>
+              <g>
+                <path class="cls-8" d="M9.67,25.64c-1.59,0-3.06-1.02-3.66-2.53l-3.41-8.56,4.72-.42,3.11,3.66h5.53l-3.74-9.1,5.2.15,8.07,8.95h7.53c3.53.01,6.88,2.34,6.9,4.79,0,.89-.46,2.96-4.95,3.05H9.67ZM5.18,16.14l2.51,6.3c.33.83,1.12,1.38,1.98,1.38h25.28c1.91-.04,3.16-.52,3.15-1.22,0-1.05-2.12-2.98-5.09-2.99h-8.33l-8.09-8.97-1.63-.05,3.71,9.02h-9.08l-3.04-3.59-1.36.12h-.01Z"/>
+                <circle class="cls-8" cx="32.18" cy="25.51" r="1.58"/>
+              </g>
+            </svg>
+          <input class="autocomplete" type="text" placeholder="Select a Destination" id="destination">
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar_container">
+      <div class="calendar_wrapper">
+        <div class="calendar_departure">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="date_blue" data-name="date_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+            <defs>
+              <style>
+                  .cls-9 {
+                      fill: #1a2f61;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <path class="cls-9" d="M34.5,9.78h-4.63v-2.41c0-.55-.45-1-1-1s-1,.45-1,1v2.41h-13.22v-2.41c0-.55-.45-1-1-1s-1,.45-1,1v2.41h-4.63c-2.12,0-3.84,1.72-3.84,3.84v18.69c0,2.12,1.72,3.84,3.84,3.84h26.47c2.12,0,3.84-1.72,3.84-3.84V13.62c0-2.12-1.72-3.84-3.84-3.84ZM36.34,32.31c0,1.02-.83,1.84-1.84,1.84H8.02c-1.02,0-1.84-.83-1.84-1.84V13.62c0-1.02.83-1.84,1.84-1.84h4.63v3.1c0,.55.45,1,1,1s1-.45,1-1v-3.1h13.22v3.1c0,.55.45,1,1,1s1-.45,1-1v-3.1h4.63c1.02,0,1.84.83,1.84,1.84v18.69Z"/>
+            <rect class="cls-9" x="10.29" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="29.13" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="10.29" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="17.13" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="17.13" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="29.13" y="17.13" width="3.09" height="2.9"/>
+          </svg>
+          <input class="calendar" id="departure" type="text" placeholder="Departure Date">
+        </div>
+
+        <div class="calendar_returning">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg id="date_blue" data-name="date_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+            <defs>
+              <style>
+                  .cls-9 {
+                      fill: #1a2f61;
+                      stroke-width: 0;
+                  }
+              </style>
+            </defs>
+            <path class="cls-9" d="M34.5,9.78h-4.63v-2.41c0-.55-.45-1-1-1s-1,.45-1,1v2.41h-13.22v-2.41c0-.55-.45-1-1-1s-1,.45-1,1v2.41h-4.63c-2.12,0-3.84,1.72-3.84,3.84v18.69c0,2.12,1.72,3.84,3.84,3.84h26.47c2.12,0,3.84-1.72,3.84-3.84V13.62c0-2.12-1.72-3.84-3.84-3.84ZM36.34,32.31c0,1.02-.83,1.84-1.84,1.84H8.02c-1.02,0-1.84-.83-1.84-1.84V13.62c0-1.02.83-1.84,1.84-1.84h4.63v3.1c0,.55.45,1,1,1s1-.45,1-1v-3.1h13.22v3.1c0,.55.45,1,1,1s1-.45,1-1v-3.1h4.63c1.02,0,1.84.83,1.84,1.84v18.69Z"/>
+            <rect class="cls-9" x="10.29" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="29.13" y="22.49" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="10.29" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="27.86" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="16.57" y="17.13" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="22.85" y="17.13" width="3.09" height="2.9"/>
+            <rect class="cls-9" x="29.13" y="17.13" width="3.09" height="2.9"/>
+          </svg>
+          <input class="calendar" id="returning" type="text" placeholder="Returning Date">
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+    <div class="findflight_promocode_wrapper">
+      <div class="promocode_container">
+        <div class="promocode_inner">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="promo_blue" data-name="promo_blue" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 42.52 42.52">
+          <defs>
+            <style>
+                .cls-10 {
+                    fill: #1a2f61;
+                    stroke-width: 0;
+                }
+            </style>
+          </defs>
+          <path class="cls-10" d="M38.39,34.01H4.14c-.41,0-.75-.34-.75-.75v-8.37c0-.41.34-.75.75-.75,1.59,0,2.89-1.29,2.89-2.89s-1.29-2.89-2.89-2.89c-.41,0-.75-.34-.75-.75v-8.35c0-.2.08-.39.22-.53s.33-.22.53-.22h34.25c.2,0,.39.08.53.22s.22.33.22.53v8.35c0,.41-.34.75-.75.75-.77,0-1.5.3-2.04.85-.55.55-.85,1.27-.85,2.04,0,1.59,1.3,2.89,2.89,2.89h0c.2,0,.39.08.53.22s.22.33.22.53v8.37c0,.2-.08.39-.22.53s-.33.22-.53.22ZM4.89,32.51h32.75s0-6.93,0-6.93c-2.06-.36-3.64-2.16-3.64-4.32,0-1.17.46-2.27,1.28-3.1.65-.65,1.47-1.07,2.35-1.22v-6.92s-32.75,0-32.75,0v6.92c2.06.36,3.64,2.16,3.64,4.32s-1.57,3.96-3.64,4.32v6.94Z"/>
+          <g>
+            <polygon class="cls-10" points="10.28 20.53 11.81 20.54 11.81 16.7 10.28 16.7 10.28 20.53"/>
+            <polygon class="cls-10" points="10.28 25.81 11.81 25.8 11.81 21.97 10.28 21.98 10.28 25.81"/>
+            <rect class="cls-10" x="10.28" y="27.27" width="1.52" height="3.83"/>
+            <rect class="cls-10" x="10.28" y="11.42" width="1.52" height="3.83"/>
+          </g>
+          <g>
+            <path class="cls-10" d="M29.64,22c-2.25,0-4.08,1.83-4.08,4.08s1.83,4.08,4.08,4.08,4.08-1.83,4.08-4.08-1.83-4.08-4.08-4.08ZM32.19,26.08c0,1.4-1.14,2.55-2.55,2.55s-2.55-1.14-2.55-2.55,1.14-2.55,2.55-2.55,2.55,1.14,2.55,2.55Z"/>
+            <path class="cls-10" d="M19.02,20.51c2.25,0,4.08-1.83,4.08-4.08s-1.83-4.08-4.08-4.08-4.08,1.83-4.08,4.08,1.83,4.08,4.08,4.08ZM16.47,16.44c0-1.4,1.14-2.55,2.55-2.55s2.55,1.14,2.55,2.55-1.14,2.55-2.55,2.55-2.55-1.14-2.55-2.55Z"/>
+          </g>
+          <polygon class="cls-10" points="32.66 11.57 14.67 29.56 16 30.95 33.99 12.96 32.66 11.57"/>
+        </svg>
+        <input class="promoCode" type="text" placeholder="Enter Promo Code">
+        </div>
+      </div>
+
+
+      <div class="findflight_container">
+      <button class="findflight_button" type="button">
+        <svg id="search_findflight"  xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#fff"><path d="M792-120.67 532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l260 258.66-48 48Zm-414-272q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/></svg>
+        <span id="fndflght">Find Flight</span>
+      </button>
+     </div>
+  </div>
+  </div>
+
+    <div class="info_wrapper">
+      <div class="restricted_plane">
+        <img src="img/Restrictions.svg" id="res_plane">
+      </div>
+
+      <div class="travel_restriction">
+        <div class="travel_res_text">Travel Restriction</div>
+        <svg id="arrow_right_red" xmlns="http://www.w3.org/2000/svg" width="7.41" height="13.319" viewBox="0 0 7.41 13.319">
+          <path id="Vector" d="M5.6,11.2,0,5.6,5.6,0" transform="translate(6.66 12.258) rotate(180)" fill="none" stroke="#d64308" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+<div class="home_promotional_container" data-cy="promotionalContainer">
+  <div class="home_promotional_wrapper" data-cy="promotionalWrapper">
+  <div class="container">
+    <div class="rowItem_container" id="rowItem1">
+     <div class="img_container">
+       <img src="img/colosseum.jpeg" class="dim_img">
+     </div>
+    </div>
+
+  <div class="content_container">
+    <div class="inner_content">
+      <h2 class="header_content">Stopover in Italy</h2>
+      <p class="justText">Did you know? When you travel transatlantic with AstraFly, you have the opportunity to add a Stopover in Italy for between 1 and 7 days, at no additional airfare.</p>
+      <button class="justButton" type="button">Learn more</button>
+    </div>
+   </div>
+  </div>
+
+  <div class="container" id="con2">
+  <div class="content_container" id="con_container2">
+    <div class="inner_content" id="inner_content2">
+      <h2 class="header_content">Latest flight deals</h2>
+      <p class="justText">Looking to find deals on flight tickets? Here you can explore flight offers to all of our destinations.</p>
+      <button class="justButton">Find deals</button>
+    </div>
+  </div>
+    <div class="rowItem_container" id="rowItem2">
+    <div class="img_container" id="img_container2">
+      <img src="img/AirplaneImage.jpg" class="dim_img">
+    </div>
+      </div>
+  </div>
+
+  <div class="container" id="con3">
+    <div class="rowItem_container" id="rowItem3">
+    <div class="img_container">
+      <img src="img/wowairbnb.jpg" class="dim_img">
+    </div>
+    </div>
+
+    <div class="content_container">
+        <div class="inner_content">
+          <h2 class="header_content">Our WoW Airbnb packages</h2>
+          <p class="justText">Are you bored and want to try something unique? Check out the WoW Airbnb filled with unique places that will blow your mind! Find a package and make your trip more WoW</p>
+          <button class="justButton">Read more</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" id="con4">
+    <div class="content_container">
+      <div class="inner_content">
+        <h2 class="header_content">Our flight schedule</h2>
+        <p class="justText">Find your next adventure from among our range of international destinations: we fly to more than 50 gateways in Europe, North America and Asia. Book your ticket now!</p>
+        <button class="justButton">Read more</button>
+      </div>
+    </div>
+
+    <div class="rowItem_container" id="rowItem4">
+    <div class="img_container">
+      <img src="img/AirplaneSchedule.jpg" class="dim_img">
+    </div>
+    </div>
+  </div>
+
+  <div class="container" id="con5">
+    <div class="rowItem_container" id="rowItem5">
+    <div class="img_container">
+      <img src="img/hotelbed.jpg" class="dim_img">
+    </div>
+    </div>
+
+    <div class="content_container">
+      <div class="inner_content">
+        <h2 class="header_content">Sweet dreams</h2>
+        <p class="justText">Secure your accommodation in Europe and earn two Astra Points for every $1 spent. Enjoy discounts with Booking.com's Genius Loyalty program and choose free cancellation for more flexibility.</p>
+        <p id="genius"><strong>Earn Astra Points | Genius Discounts | Free Cancellation</strong></p>
+        <button class="justButton" id="booktoday">Book today</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<footer class="footer_root">
+  <nav>
+    <div class="footer_top">
+      <div class="footer_logo">
+        <?xml version="1.0" standalone="no"?>
+        <!DOCTYPE PUBLIC "-//W3C//DTD SVG 20010904//EN"
+        "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+        <svg id="ASTRFLY" version="1.0" xmlns="http://www.w3.org/2000/svg"
+             width="391px" height="76px" viewBox="0 0 1280.000000 1432.000000" style="transform: scale(5)"
+             preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,1432.000000) scale(0.100000,-0.100000)"
+             fill="#001b71" stroke="none">
+            <path d="M9827 7942 c-16 -2 -30 -9 -33 -15 -2 -7 15 -73 39 -147 24 -74 54
+-172 67 -218 13 -45 27 -85 31 -88 5 -3 9 -13 9 -24 0 -10 20 -80 45 -157 25
+-76 64 -199 86 -273 22 -74 49 -160 58 -190 10 -30 31 -95 46 -145 15 -49 42
+-135 60 -190 17 -55 42 -138 55 -185 13 -47 28 -91 33 -97 7 -10 168 -13 743
+-13 823 0 769 -6 695 73 -40 43 -167 186 -461 522 -91 104 -190 216 -221 250
+-31 33 -100 112 -154 175 -55 63 -140 160 -189 215 -50 56 -152 170 -226 255
+-74 84 -154 174 -177 199 l-42 46 -218 5 c-120 3 -231 4 -246 2z m528 -795
+c39 1 138 5 221 8 139 7 154 6 190 -13 21 -11 51 -33 65 -49 29 -30 94 -171
+85 -181 -4 -3 -32 5 -64 18 -74 32 -178 37 -300 16 -182 -31 -221 -18 -306
+102 -31 42 -56 82 -56 89 0 14 36 22 70 14 14 -3 57 -5 95 -4z m493 -261 c29
+-9 67 -30 85 -45 39 -35 102 -153 94 -175 -6 -15 -10 -15 -44 0 -32 14 -75 16
+-253 15 l-215 0 -46 27 c-51 30 -82 63 -123 135 -30 52 -29 65 2 48 26 -14
+122 -14 182 0 124 28 216 27 318 -5z m113 -262 c69 -20 83 -33 70 -66 -11 -28
+-35 -38 -100 -38 -37 0 -48 5 -77 37 -32 35 -42 62 -27 76 11 12 78 8 134 -9z"/>
+            <path d="M3057 7213 c-8 -16 -40 -100 -72 -188 -31 -88 -72 -198 -90 -245 -54
+-136 -105 -278 -105 -290 0 -15 227 -13 237 3 4 6 15 32 23 57 l15 45 135 0
+134 0 16 -41 c27 -73 29 -74 161 -74 129 0 132 1 100 54 -11 17 -31 67 -46
+111 -14 44 -30 89 -36 100 -5 11 -43 114 -84 229 -42 114 -82 221 -91 237
+l-15 29 -134 0 -134 0 -14 -27z m172 -247 c11 -29 27 -81 36 -115 8 -33 18
+-67 21 -76 5 -13 -7 -15 -85 -15 -84 0 -91 1 -83 18 5 9 22 64 37 122 15 58
+29 108 32 113 10 17 23 4 42 -47z"/>
+            <path d="M3935 7233 c-64 -14 -155 -57 -182 -86 -46 -49 -57 -76 -57 -148 0
+-75 22 -118 79 -157 44 -31 143 -68 201 -76 89 -12 151 -36 165 -63 12 -23 11
+-27 -10 -44 -18 -15 -39 -19 -93 -19 -68 0 -69 0 -108 43 l-39 42 -97 3 c-53
+2 -100 0 -106 -6 -6 -6 -4 -29 7 -65 20 -68 67 -115 151 -148 52 -20 76 -23
+199 -24 l140 0 70 35 c42 21 81 50 99 73 26 33 30 47 34 120 5 96 -7 130 -60
+171 -42 31 -125 62 -208 76 -98 16 -169 47 -176 77 -4 13 -3 27 0 31 4 4 40 8
+80 10 70 4 75 3 108 -27 19 -16 47 -35 62 -41 38 -14 149 -13 169 3 27 19 12
+67 -40 126 -39 44 -54 54 -124 76 -77 24 -200 33 -264 18z"/>
+            <path d="M4460 7140 l0 -100 125 0 c93 0 125 -3 126 -12 1 -7 1 -131 -1 -275
+l-2 -262 23 -6 c13 -3 68 -5 122 -3 l98 3 -1 277 -1 277 132 3 131 3 0 95 0
+95 -376 3 -376 2 0 -100z"/>
+            <path d="M5311 6867 l-2 -374 23 -7 c13 -3 72 -6 132 -6 l108 0 -6 128 c-3 72
+-2 133 3 142 11 17 75 17 95 1 7 -6 26 -39 41 -74 15 -34 41 -92 58 -129 l30
+-68 132 0 c72 0 135 3 138 7 4 3 1 13 -7 22 -15 17 -156 283 -156 294 0 2 21
+17 46 33 144 91 127 292 -31 377 -38 21 -55 22 -321 25 l-281 3 -2 -374z m469
+193 c29 -29 27 -84 -5 -115 -22 -23 -32 -25 -113 -25 l-89 0 -7 38 c-3 20 -6
+56 -6 80 l0 42 100 0 c87 0 103 -3 120 -20z"/>
+            <path d="M6382 7223 c-5 -10 -19 -45 -30 -78 -11 -33 -46 -127 -77 -210 -31
+-82 -77 -208 -101 -280 -25 -71 -52 -135 -60 -141 -35 -28 -14 -34 110 -34
+138 0 135 -1 151 70 l10 45 136 3 136 3 18 -48 c28 -75 24 -73 156 -73 126 0
+134 4 105 45 -8 11 -21 43 -29 70 -8 28 -30 88 -47 135 -18 47 -36 96 -40 110
+-5 14 -30 79 -55 145 -26 66 -53 140 -61 165 -30 95 -20 90 -175 90 -122 0
+-139 -2 -147 -17z m162 -228 c13 -31 66 -214 66 -229 0 -3 -36 -6 -80 -6 -95
+0 -94 -2 -55 131 13 46 25 91 25 100 0 13 18 39 27 39 1 0 9 -16 17 -35z"/>
+            <path d="M7053 7223 c-4 -10 -6 -180 -3 -378 l5 -360 120 0 120 0 0 135 0 135
+155 5 155 5 6 30 c4 17 7 51 8 78 l1 47 -149 0 c-82 0 -156 3 -165 6 -12 4
+-16 20 -16 54 0 34 4 50 16 54 9 3 91 6 184 6 195 0 177 -12 172 123 l-4 77
+-298 0 c-275 0 -300 -1 -307 -17z"/>
+            <path d="M7780 6871 c0 -300 3 -371 14 -380 9 -8 103 -11 322 -9 l309 3 0 95
+0 95 -195 5 -195 5 -2 260 c-1 143 -4 268 -7 278 -4 15 -18 17 -125 17 l-121
+0 0 -369z"/>
+            <path d="M8380 7230 c0 -5 64 -106 143 -223 l142 -212 3 -157 3 -158 120 0
+119 0 0 148 0 148 139 211 c77 116 145 214 150 218 6 3 11 13 11 21 0 12 -21
+14 -131 12 l-131 -3 -67 -110 c-37 -61 -73 -110 -81 -110 -8 0 -28 20 -44 45
+-15 25 -47 74 -70 110 l-41 65 -132 3 c-87 2 -133 -1 -133 -8z"/>
+          </g>
+        </svg>
+
+      </div>
+
+      <div class="footer_social">
+        <div class="social_container">
+        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+        </div>
+        <div class="social_container">
+        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+        </div>
+        <div class="social_container">
+        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
+        </div>
+        <div class="social_container">
+        <svg class="social" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer_middle">
+      <div class="footer_quick-links_wrapper">
+        <p class="footer_link-title" id="QUICK_LINKS">Quick links</p>
+        <ul class="footer_quick-links">
+          <li class="quick-link">
+            <p class="quick-link_text">Contact us</p>
+          </li>
+          <li class="quick-link">
+            <p class="quick-link_text">Flight schedule</p>
+          </li>
+          <li class="quick-link">
+            <p class="quick-link_text">Flight status</p>
+          </li>
+          <li class="quick-link">
+            <p class="quick-link_text">Customer care</p>
+          </li>
+          <li class="quick-link">
+            <p class="quick-link_text">Manage booking</p>
+          </li>
+          <li class="quick-link">
+            <p class="quick-link_text">Check-in</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_normal-links">
+        <div class="col-4">
+          <p class="footer_link-title">Our organization</p>
+          <ul>
+            <li class="footer_link">
+              <p class="link_text">About AstraFly</p>
+            </li>
+            <li class="footer_link">
+              <p class="link_text">AstraFly Group</p>
+            </li>
+            <li class="footer_link">
+              <p class="link_text">Careers</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-4">
+          <p class="footer_link-title">Get inspired</p>
+          <ul>
+            <li class="footer_link">
+              <p class="link_text">Blog</p>
+            </li>
+            <li class="footer_link">
+              <p class="link_text">Destinations</p>
+            </li>
+            <li class="footer_link">
+              <p class="link_text">WoW Airbnb packages</p>
+            </li>
+            <li class="footer_link">
+              <p class="link_text">Astra Club</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_newsletter">
+        <div class="footer_blockquoteContainer">
+          <div class="footer_blockquotecolorBar"></div>
+          <div class="footer_blockquoteText">Subscribe to our newsletter</div>
+        </div>
+        <p class="footer_subtext">Sign up now for the AstraFly newsletter to receive our best offers from your location.</p>
+        <div class="footer_buttonWrapper">
+          <button class="footer_button" type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <div class="footer_bottom">
+      <ul class="footer_privacyLinks">
+        <li>
+          <p class="privacyLink_text">Cookie policy</p>
+        </li>
+        <li>
+          <p class="privacyLink_text">Privacy policy</p>
+        </li>
+        <li>
+          <p class="privacyLink_text">Sitemap</p>
+        </li>
+        <li>
+          <p class="privacyLink_text">Terms and conditions</p>
+        </li>
+        <li>
+          <p class="privacyLink_text">Accessibility plan</p>
+        </li>
+      </ul>
+      <p>©2024 AstraFly</p>
+    </div>
+  </nav>
+</footer>
+</body>
+</html>
